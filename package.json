@@ -1,0 +1,29 @@
+{
+  "name": "help-pet",
+  "version": "1.0.0",
+  "description": "Este é um projeto estudantil para prática de conceitos e ensinamentos passados em sala de aula com a linguaguem de programação Typescript.",
+  "main": "index.js",
+  "scripts": {
+    "dev:console": "node -r tsconfig-paths/register -r sucrase/register src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript",
+    "paradigma",
+    "orientado",
+    "objeto",
+    "help",
+    "pet"
+  ],
+  "author": "Ester, Raissia e Fernanda",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "sucrase": "^3.35.0",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0"
+  }
+}
