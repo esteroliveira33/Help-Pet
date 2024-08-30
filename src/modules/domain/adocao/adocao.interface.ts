@@ -1,10 +1,13 @@
-export interface IUser{
-    nome: string;
-    email: string;
-    senha: string;
-    tipo: TiposDeUsuarios;
-    estado: string;
-    cidade: string;
-    telefone: string;
-    renda: number;
+export interface IAdocao{
+    disponibilidade: string;
+    motivoAdocao: string;
+    dataAvaliacao: Date;
+    status: Status;
+    motivoReprovacao: string;
+    doacaoEfetivada: boolean;
+}
+
+export enum Status{
+    APROVADO = 'APROVADO',
+    REPROVADO = 'REPROVADO',
 }

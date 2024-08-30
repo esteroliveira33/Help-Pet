@@ -17,7 +17,7 @@ const user: IUser = {
 } 
 
 let exibirNome = function (): string {
-    return (`O nome é: ${nome}`);
+    return (`O nome é: ${user.nome}`);
 }
 const novousuario = User.criarUsuario(user);
 
