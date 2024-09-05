@@ -63,4 +63,6 @@ export class Adocao implements IAdocao{
     public static criarAdocao(adocao: IAdocao): Adocao{
         return new Adocao(adocao);
     }
+
+    
 }
