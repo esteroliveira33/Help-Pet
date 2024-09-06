@@ -16,7 +16,7 @@ export class User{
     @Column()
     senha: string;
 
-    @Column({type: 'enum', enum: TiposDeUsuarios})
+    @Column({type: 'enum', enum: TiposDeUsuarios, name: 'tipo_de_usuario'})
     tipoDeUsuario: TiposDeUsuarios;
 
     @Column()

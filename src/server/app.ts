@@ -1,11 +1,15 @@
-import  Express  from "express";
-import { User } from "../database/user/user.entity";
-export class Server{
-   public app: Express.Application;
+import Express from "express";
+import { router } from "../main/controllers/index";
+export class Server {
+  public app: Express.Application;
 
-   constructor(){
-    this.app = Express()
-}
+  constructor() {
+    this.app = Express();
+    this.middlewares();
+  }
 
-
+  private middlewares() {
+    this.app.use(router);
+    this.app.use(Express.json());
+  }
 }
