@@ -47,6 +47,24 @@ class UserService {
       res.json(error);
     }
   }
+
+  public async atualizarUsuario(req: Request, res: Response) {
+    try {
+      const usuarios = await dataSource.getRepository(User).find();
+      res.status(200).json(usuarios);
+    } catch (error) {
+      res.json(error);
+    }
+  }
+
+  public async deletarUsuarios(req: Request, res: Response) {
+    try {
+      const usuarios = await dataSource.getRepository(User).find();
+      res.status(200).json(usuarios);
+    } catch (error) {
+      res.json(error);
+    }
+  }
 }
 
 export const userService = new UserService();

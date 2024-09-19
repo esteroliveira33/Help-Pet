@@ -7,6 +7,7 @@
     "dev": "nodemon",
     "start": "node dist/index.js",
     "dev:console": "node -r tsconfig-paths/register -r sucrase/register src/index.ts",
+    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

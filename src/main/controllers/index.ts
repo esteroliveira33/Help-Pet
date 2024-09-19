@@ -5,6 +5,6 @@ import { userService } from "../services/domain/user/user.service";
 
 export const router: Router = Router();
 
-router.use("/users", userService.recuperarTodos);
-router.use("/create/user", userService.criarUsuario);
-router.use("/user/:id", userService.recuperarPorId);
+router.get("/users", userService.recuperarTodos);
+router.post("/create/user", userService.criarUsuario);
+router.get("/user/:id", userService.recuperarPorId);
